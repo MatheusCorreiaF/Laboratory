@@ -1,0 +1,17 @@
+d:\Estudos\Laboratory\initC#\CsharpProjects\TestProject\bin\Debug\net7.0\TestProject.exe
+d:\Estudos\Laboratory\initC#\CsharpProjects\TestProject\bin\Debug\net7.0\TestProject.deps.json
+d:\Estudos\Laboratory\initC#\CsharpProjects\TestProject\bin\Debug\net7.0\TestProject.runtimeconfig.json
+d:\Estudos\Laboratory\initC#\CsharpProjects\TestProject\bin\Debug\net7.0\TestProject.dll
+d:\Estudos\Laboratory\initC#\CsharpProjects\TestProject\bin\Debug\net7.0\TestProject.pdb
+d:\Estudos\Laboratory\initC#\CsharpProjects\TestProject\obj\Debug\net7.0\TestProject.GeneratedMSBuildEditorConfig.editorconfig
+d:\Estudos\Laboratory\initC#\CsharpProjects\TestProject\obj\Debug\net7.0\TestProject.AssemblyInfoInputs.cache
+d:\Estudos\Laboratory\initC#\CsharpProjects\TestProject\obj\Debug\net7.0\TestProject.AssemblyInfo.cs
+d:\Estudos\Laboratory\initC#\CsharpProjects\TestProject\obj\Debug\net7.0\TestProject.csproj.CoreCompileInputs.cache
+d:\Estudos\Laboratory\initC#\CsharpProjects\TestProject\obj\Debug\net7.0\TestProject.dll
+d:\Estudos\Laboratory\initC#\CsharpProjects\TestProject\obj\Debug\net7.0\refint\TestProject.dll
+d:\Estudos\Laboratory\initC#\CsharpProjects\TestProject\obj\Debug\net7.0\TestProject.pdb
+d:\Estudos\Laboratory\initC#\CsharpProjects\TestProject\obj\Debug\net7.0\TestProject.genruntimeconfig.cache
+d:\Estudos\Laboratory\initC#\CsharpProjects\TestProject\obj\Debug\net7.0\ref\TestProject.dll
+D:\Estudos\Laboratory\initC#\CsharpProjects\TestProject\bin\Debug\net7.0\FluentColorConsole.dll
+D:\Estudos\Laboratory\initC#\CsharpProjects\TestProject\obj\Debug\net7.0\TestProject.csproj.AssemblyReference.cache
+d:\Estudos\Laboratory\initC#\CsharpProjects\TestProject\obj\Debug\net7.0\TestProject.csproj.CopyComplete
