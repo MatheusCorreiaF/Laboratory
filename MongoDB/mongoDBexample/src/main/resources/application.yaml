@@ -1,0 +1,8 @@
+spring:
+  data:
+    mongodb:
+#      host: localhost
+#      port: 27017
+#      database: user_db
+#      dsadas: mongo://mongoadmin:mongoadmin@mongo:27017/
+      uri: mongodb://mongoadmin:mongoadmin@localhost:27017/user_db?authSource=admin
