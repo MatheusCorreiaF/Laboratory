@@ -13,7 +13,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"id\": \"f7c44b13-f8cd-485e-9b86-eae042f789c8\",\r\n    \"name\": \"Matheus Alter\",\r\n    \"age\": 29,\r\n    \"email\": \"teste@teste.com\"\r\n}",
+					"raw": "{\r\n    \"name\": \"Matheus Alter\",\r\n    \"age\": 29,\r\n    \"email\": \"teste@teste.com\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -29,6 +29,36 @@
 					"port": "8080",
 					"path": [
 						"v1",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "insertUserAsync",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Matheus Alter\",\r\n    \"age\": 29,\r\n    \"email\": \"teste@teste.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/async/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"async",
 						"user"
 					]
 				}
