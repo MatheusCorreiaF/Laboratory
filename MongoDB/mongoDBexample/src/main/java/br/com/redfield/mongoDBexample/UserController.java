@@ -22,4 +22,10 @@ public class UserController {
 
         return new ResponseEntity<>(userService.saveUser(user), HttpStatus.CREATED);
     }
+
+    @PostMapping("/async/user")
+    ResponseEntity<User> addUserAsync(@RequestBody User user) throws InterruptedException {
+
+        return new ResponseEntity<>(userService.saveUserAsync(user), HttpStatus.CREATED);
+    }
 }
