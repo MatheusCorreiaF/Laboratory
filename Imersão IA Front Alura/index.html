@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Loja Gamer — Peças para PC</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Loja Gamer</h1>
+      <p>Peças e acessórios para montar seu PC gamer</p>
+    </div>
+
+    <nav aria-label="Navegação principal">
+      <ul>
+        <li><a href="#home">Início</a></li>
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="#ofertas">Ofertas</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a href="#carrinho">Carrinho</a></li>
+      </ul>
+    </nav>
+
+    <form role="search" action="#" method="get" aria-label="Busca de produtos">
+      <label for="search">Buscar produtos</label>
+      <input id="search" name="q" type="search" placeholder="Ex.: placa de vídeo, SSD" />
+      <button type="submit">Buscar</button>
+    </form>
+  </header>
+
+  <main>
+    <section id="home" aria-labelledby="hero-title">
+      <h2 id="hero-title">Monte o seu setup</h2>
+      <p>Encontre CPUs, GPUs, placas-mãe, memórias, SSDs e muito mais.</p>
+      <a href="#produtos">Ver produtos</a>
+    </section>
+
+    <section id="produtos" aria-labelledby="produtos-title">
+      <h2 id="produtos-title">Produtos</h2>
+
+      <aside aria-label="Filtros e categorias">
+        <h3>Categorias</h3>
+        <ul>
+          <li><a href="#cpu">CPUs</a></li>
+          <li><a href="#gpu">GPUs</a></li>
+          <li><a href="#mb">Placas-mãe</a></li>
+          <li><a href="#ram">Memórias RAM</a></li>
+          <li><a href="#storage">Armazenamento</a></li>
+          <li><a href="#psu">Fontes</a></li>
+        </ul>
+
+        <h3>Ordenar</h3>
+        <form action="#" method="get" aria-label="Ordenar produtos">
+          <label for="sort">Ordenar por</label>
+          <select id="sort" name="sort">
+            <option value="popular">Mais populares</option>
+            <option value="price-asc">Preço: menor para maior</option>
+            <option value="price-desc">Preço: maior para menor</option>
+            <option value="new">Novidades</option>
+          </select>
+          <button type="submit">Aplicar</button>
+        </form>
+      </aside>
+
+      <section aria-label="Lista de produtos">
+        <article id="produto-001" role="article" aria-labelledby="produto-001-nome">
+          <h3 id="produto-001-nome">Placa de Vídeo Turbo X 12GB</h3>
+          <p>Desempenho para jogos em 1440p com recursos de ray tracing.</p>
+          <ul>
+            <li>Memória: 12GB GDDR6</li>
+            <li>Portas: HDMI 2.1, 3x DisplayPort</li>
+            <li>Consumo aproximado: 250W</li>
+          </ul>
+          <p>Preço: R$ 3.499,00</p>
+          <form action="#" method="post" aria-label="Adicionar placa de vídeo ao carrinho">
+            <input type="hidden" name="sku" value="GPU-001" />
+            <label>
+              Quantidade
+              <input name="qty" type="number" min="1" value="1" />
+            </label>
+            <button type="submit">Adicionar ao carrinho</button>
+          </form>
+        </article>
+
+        <article id="produto-002" role="article" aria-labelledby="produto-002-nome">
+          <h3 id="produto-002-nome">Processador Raptor 8 Núcleos</h3>
+          <p>Alto desempenho single-core e multi-core para jogos e criação de conteúdo.</p>
+          <ul>
+            <li>8 núcleos / 16 threads</li>
+            <li>Frequência base 3.8 GHz</li>
+            <li>Socket AM5</li>
+          </ul>
+          <p>Preço: R$ 1.899,00</p>
+          <form action="#" method="post">
+            <input type="hidden" name="sku" value="CPU-001" />
+            <label>
+              Quantidade
+              <input name="qty" type="number" min="1" value="1" />
+            </label>
+            <button type="submit">Adicionar ao carrinho</button>
+          </form>
+        </article>
+
+        <article id="produto-003" role="article" aria-labelledby="produto-003-nome">
+          <h3 id="produto-003-nome">SSD NVMe 1TB — Velocidade Pro</h3>
+          <p>Armazenamento rápido para reduzir tempos de carregamento.</p>
+          <ul>
+            <li>Capacidade: 1TB</li>
+            <li>Interface: NVMe PCIe 4.0</li>
+            <li>Leitura sequencial: até 7.000 MB/s</li>
+          </ul>
+          <p>Preço: R$ 649,00</p>
+          <form action="#" method="post">
+            <input type="hidden" name="sku" value="SSD-001" />
+            <label>
+              Quantidade
+              <input name="qty" type="number" min="1" value="1" />
+            </label>
+            <button type="submit">Adicionar ao carrinho</button>
+          </form>
+        </article>
+
+        <article id="produto-004" role="article" aria-labelledby="produto-004-nome">
+          <h3 id="produto-004-nome">Memória RAM 32GB (2x16GB) 3600MHz</h3>
+          <p>Kit de memória com baixa latência pensado para overclock.</p>
+          <ul>
+            <li>32GB (2x16GB)</li>
+            <li>3600 MHz, CL16</li>
+            <li>Compatível com plataformas AMD e Intel</li>
+          </ul>
+          <p>Preço: R$ 499,00</p>
+          <form action="#" method="post">
+            <input type="hidden" name="sku" value="RAM-001" />
+            <label>
+              Quantidade
+              <input name="qty" type="number" min="1" value="1" />
+            </label>
+            <button type="submit">Adicionar ao carrinho</button>
+          </form>
+        </article>
+      </section>
+    </section>
+
+    <section id="ofertas" aria-labelledby="ofertas-title">
+      <h2 id="ofertas-title">Ofertas</h2>
+      <p>Confira as promoções por tempo limitado.</p>
+      <ul>
+        <li>Combo GPU + CPU com desconto</li>
+        <li>Frete grátis para compras acima de R$ 500,00</li>
+      </ul>
+    </section>
+
+    <aside id="carrinho" aria-labelledby="carrinho-title">
+      <h2 id="carrinho-title">Resumo do Carrinho</h2>
+      <p>Nenhum item no carrinho.</p>
+      <a href="#checkout">Finalizar compra</a>
+    </aside>
+
+    <section id="contato" aria-labelledby="contato-title">
+      <h2 id="contato-title">Contato</h2>
+      <p>Tem dúvidas? Fale conosco pelo formulário abaixo.</p>
+      <form action="#" method="post" aria-label="Formulário de contato">
+        <label for="nome">Nome</label>
+        <input id="nome" name="nome" type="text" required />
+
+        <label for="email">E-mail</label>
+        <input id="email" name="email" type="email" required />
+
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" rows="5"></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <section aria-labelledby="sobre-title">
+      <h3 id="sobre-title">Sobre a Loja Gamer</h3>
+      <p>Loja especializada em peças e acessórios para entusiastas e profissionais.</p>
+    </section>
+
+    <section aria-labelledby="info-title">
+      <h3 id="info-title">Informações</h3>
+      <ul>
+        <li><a href="#">Política de troca</a></li>
+        <li><a href="#">Garantia</a></li>
+        <li><a href="#">Termos de uso</a></li>
+      </ul>
+    </section>
+
+    <p>© 2026 Loja Gamer. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
