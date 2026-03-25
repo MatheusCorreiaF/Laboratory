@@ -1,0 +1,152 @@
+:root{
+    --bg-1: #041026; /* deep navy */
+    --bg-2: #071428; /* gradient darker */
+    --card: #0f2336; /* cool card color */
+    --accent: #00c0d6; /* cyan accent */
+    --accent-2: #5fd3ff; /* lighter cyan */
+    --muted: #9fbad6;
+    --text: #e8f6ff;
+    --glass: rgba(255,255,255,0.03);
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+    margin:0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    background: linear-gradient(180deg,var(--bg-1) 0%, var(--bg-2) 100%);
+    color:var(--text);
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+}
+
+header{
+    text-align:center;
+    padding:3rem 1rem 1rem;
+}
+
+header h1{
+    margin:0;
+    font-size:2.25rem;
+    letter-spacing:0.2px;
+    color:var(--text);
+    text-shadow:0 2px 12px rgba(0,0,0,0.6);
+}
+
+main{
+    max-width:980px;
+    margin:2rem auto 4rem;
+    padding:0 1rem;
+}
+
+.profile-section{
+    display:block;
+}
+
+.profile-container{
+    list-style:none;
+    padding:0;
+    margin:2rem 0 0;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap:1.25rem;
+    align-items:start;
+}
+
+.profile{
+    display:flex;
+    justify-content:center;
+}
+
+.profile figure{
+    margin:0;
+    text-align:center;
+    width:100%;
+    max-width:200px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent 60%);
+    padding:1rem;
+    border-radius:12px;
+    box-shadow: 0 6px 18px rgba(2,6,23,0.6);
+    transition:box-shadow 220ms;
+    cursor:default;
+    border:1px solid rgba(255,255,255,0.03);
+    position:relative;
+    overflow:visible;
+}
+
+.profile figure img{
+    width:120px;
+    height:120px;
+    object-fit:cover;
+    border-radius:50%;
+    display:block;
+    margin:0 auto;
+    border:4px solid rgba(255,255,255,0.04);
+    transition: transform 220ms cubic-bezier(.2,.9,.3,1), box-shadow 220ms, filter 220ms;
+    cursor:pointer;
+}
+
+.profile figure figcaption{
+    margin-top:0.6rem;
+    font-weight:700;
+    color:var(--muted);
+    font-size:0.95rem;
+}
+
+.profile figure:hover{
+    /* visual hover on figure kept minimal; main interaction is on the circular image */
+}
+
+.profile figure:focus-within,
+.profile figure:focus{
+    outline:3px solid rgba(0,192,214,0.14);
+    outline-offset:4px;
+}
+
+/* Hover effect applied only on the circular image: subtle white fade + cyan accent */
+.profile figure img:hover,
+.profile figure img:focus{
+    transform:translateY(-6px) scale(1.02);
+    box-shadow: 0 6px 20px rgba(0,192,214,0.12), 0 2px 6px rgba(0,0,0,0.5), 0 0 18px rgba(255,255,255,0.06);
+    filter:brightness(1.04);
+}
+
+.profile figure img:focus-visible{
+    outline:3px solid rgba(95,211,255,0.18);
+    outline-offset:6px;
+}
+
+/* Footer */
+footer{
+    text-align:center;
+    padding:2rem 1rem;
+    color:rgba(232,246,255,0.6);
+    font-size:0.9rem;
+    border-top:1px solid rgba(255,255,255,0.02);
+    background:linear-gradient(180deg, transparent, rgba(0,0,0,0.02));
+}
+
+/* Small screens */
+@media (max-width:520px){
+    header h1{font-size:1.6rem}
+    .profile figure{padding:0.75rem;border-radius:10px}
+    .profile figure img{width:100px;height:100px}
+}
+
+/* Focus-visible for keyboard users */
+.profile figure:focus-visible{
+    outline:3px solid var(--accent);
+    outline-offset:6px;
+}
+
+/* Subtle decorative accent */
+.header-accent{
+    height:6px;
+    width:120px;
+    margin:12px auto 0;
+    border-radius:999px;
+    background:linear-gradient(90deg,var(--accent),var(--accent-2));
+}
+
+/* Utility: center helper */
+.u-center{display:flex;align-items:center;justify-content:center}
